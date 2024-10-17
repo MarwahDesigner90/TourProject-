@@ -1,0 +1,103 @@
+
+* {
+  Box-Sizing: Border-Box;
+  Margin: 0;
+}
+
+Body,
+Html {
+  Margin: 0;
+  Padding: 0;
+}
+
+/*------------------------Scroll Bar-----------------------*/
+::-Webkit-Scrollbar {
+  Width: 20px;
+}
+
+::-Webkit-Scrollbar-Track {
+  Box-Shadow: Inset 0 0 5px Grey;
+  Border-Radius: 10px;
+}
+
+::-Webkit-Scrollbar-Thumb {
+  Background-Color: #Fde65e;
+  Border-Radius: 10px;
+}
+
+::-Webkit-Scrollbar-Thumb:hover {
+  Background-Color: #Fde02f;
+}
+
+/*========================Nav Bar=========================*/
+.Nav-Bar {
+  Display: Flex;
+  Flex-Flow: Row Wrap;
+  Width: 100%;
+  Height: 80px;
+  Background-Color: #Fff;
+  Box-Shadow: 3px 3px 10px Lightslategray;
+  Align-Items: center;
+  Justify-Content: Center;
+  Position: Sticky;
+  Top: 0;
+  Z-Index: 1;
+}
+
+.Logo {
+  Flex: 1;
+  Font-Size: 40px;
+  Padding: 15px;
+  Margin-Left: 2px;
+  Font-Family: Satisfy;
+}
+
+Ul.Menu {
+  Flex: 1;
+  Display: Flex;
+  Flex-Flow: Row Wrap;
+}
+
+.Menu Li {
+  Flex: 1;
+  List-Style-Type: None;
+  Font-Size: 16px;
+  Font-Family: "Barlow Condensed";
+  Text-Align: Center;
+}
+
+.Menu Li A {
+  Text-Decoration: None;
+  Color: #000;
+  Text-Transform: Uppercase;
+}
+
+.Menu Li A:hover {
+  Color: Midnightblue;
+  Text-Decoration: Underline;
+}
+
+
+
+/*===============Pic break===================*/
+.Pic-break { width: 100%; height: 100%;}
+.container {
+  position: relative;
+  color: white; 
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  background-color:rgba(0, 0, 0, 0.459);
+  color: white;
+  font-size: large;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.centered ul{ position: relative;  left:15%; padding:10px; bottom:12%; margin-bottom: -60px;}
+.centered .lefty {position: relative; left: 5%; top: 2%;}
+.centered p { text-align: center; position: relative; top:3%; font-size: 25px; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}

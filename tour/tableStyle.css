@@ -1,0 +1,203 @@
+
+
+* {
+  Box-Sizing: Border-Box;
+  Margin: 0;
+}
+
+Body,
+Html {
+  Margin: 0;
+  Padding: 0;
+  background-image: url();
+  background-color:#Fff;
+  
+}
+
+/*------------------------Scroll Bar-----------------------*/
+::-Webkit-Scrollbar {
+  Width: 20px;
+}
+
+::-Webkit-Scrollbar-Track {
+  Box-Shadow: Inset 0 0 5px Grey;
+  Border-Radius: 10px;
+}
+
+::-Webkit-Scrollbar-Thumb {
+  Background-Color: #Fde65e;
+  Border-Radius: 10px;
+}
+
+::-Webkit-Scrollbar-Thumb:hover {
+  Background-Color: #Fde02f;
+}
+
+/*========================Nav Bar=========================*/
+.Nav-Bar {
+  Display: Flex;
+  Flex-Flow: Row Wrap;
+  Width: 100%;
+  Height: 70px;
+  Background-Color: #Fff;
+  Box-Shadow: 3px 3px 10px Lightslategray;
+  Align-Items: center;
+  Justify-Content: Center;
+  Position: Sticky;
+  Top: 0;
+  Z-Index: 1;
+}
+
+.Logo {
+  Flex: 1;
+  Font-Size: 40px;
+  Padding: 20px;
+  Margin-Left: 50px;
+  Font-Family: Satisfy;
+  
+}
+
+Ul.Menu {
+  Flex: 1;
+  Display: Flex;
+  Flex-Flow: Row Wrap;
+}
+
+.Menu Li {
+  Flex: 1;
+  List-Style-Type: None;
+  Font-Size: 16px;
+  Font-Family: "Barlow Condensed";
+  Text-Align: Center;
+}
+
+.Menu Li A {
+  Text-Decoration: None;
+  Color: #000;
+  Text-Transform: Uppercase;
+}
+
+.Menu Li A:hover {
+  Color: Midnightblue;
+  Text-Decoration: Underline;
+}
+
+
+
+/*===============Table===================*/
+table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: 1000px;
+  width: 100%;
+  margin: 10% auto;
+  position: relative;
+  
+}
+table * {
+  position: relative;
+}
+table td, table th {
+  padding-left: 8px;
+}
+table thead tr {
+  height: 60px;
+  background: #Fde02f;
+  font-size: 16px;
+}
+table tbody tr {
+  height: 48px;
+  border-bottom: 3px solid  #Fde02f;
+}
+table tbody tr:last-child {
+  border: 0;
+}
+table td, table th {
+  text-align: center;
+  
+  
+}
+table td.l, table th.l {
+  text-align: right;
+  
+}
+table td.c, table th.c {
+  text-align: center;
+}
+table td.r, table th.r {
+  text-align: center;
+  
+}
+li {text-align: left;}
+.wid {
+ width: 120px;
+ text-align: center;
+}
+.bold{
+  font-weight: bold;
+  width: 120px;
+}
+.th{
+  height: 60px;
+  background: #Fde02f;
+  font-size: 16px;
+}
+
+/*-----*/
+.ball {
+  position: absolute;
+  border-radius: 100%;
+  opacity: 0.7;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+@media screen and (max-width: 35.5em) {
+  table {
+    display: block;
+  }
+  table > *, table tr, table td, table th {
+    display: block;
+  }
+  table thead {
+    display: none;
+  }
+  table tbody tr {
+    height: auto;
+    padding: 8px 0;
+  }
+  table tbody tr td {
+    padding-left: 45%;
+    margin-bottom: 12px;
+  }
+  table tbody tr td:last-child {
+    margin-bottom: 0;
+  }
+  table tbody tr td:before {
+    position: absolute;
+    font-weight: 700;
+    width: 40%;
+    left: 10px;
+    top: 0;
+  }
+  table tbody tr td:nth-child(1):before {
+    content: "Code";
+  }
+  table tbody tr td:nth-child(2):before {
+    content: "Stock";
+  }
+  table tbody tr td:nth-child(3):before {
+    content: "Cap";
+  }
+  table tbody tr td:nth-child(4):before {
+    content: "Inch";
+  }
+  table tbody tr td:nth-child(5):before {
+    content: "Box Type";
+  }
+}
+
+
